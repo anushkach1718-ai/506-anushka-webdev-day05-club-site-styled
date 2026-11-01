@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Register to join Campus Connect College Club.">
+  <title>Registration | Campus Connect</title><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
+<body>
+  <header class="site-header"><nav class="navbar container" aria-label="Main navigation">
+    <a class="brand" href="index.html"><span class="brand-mark">CC</span> Campus Connect</a><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a class="active" href="registration.html">Registration</a></li><li><a href="contact.html">Contact</a></li></ul>
+  </nav></header>
+  <main>
+    <section class="page-hero"><div class="container"><p class="eyebrow">BECOME A MEMBER</p><h1>Your next chapter starts here.</h1><p>Tell us a little about yourself. We would love to have you in our community.</p></div></section>
+    <section class="section container form-section">
+      <form class="form-card" action="#" method="get">
+        <div class="form-heading"><h2>Student registration</h2><p>Fields marked with * are required.</p></div>
+        <div class="form-grid">
+          <div class="form-group"><label for="fullname">Full name *</label><input id="fullname" name="fullname" type="text" placeholder="Enter your full name" autocomplete="name" required></div>
+          <div class="form-group"><label for="email">Email address *</label><input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required></div>
+          <div class="form-group"><label for="password">Create password *</label><input id="password" name="password" type="password" minlength="8" placeholder="At least 8 characters" required></div>
+          <div class="form-group"><label for="phone">Phone number *</label><input id="phone" name="phone" type="tel" placeholder="10-digit phone number" pattern="[0-9]{10}" required></div>
+          <div class="form-group"><label for="roll">Roll number *</label><input id="roll" name="roll" type="number" min="1" placeholder="Enter roll number" required></div>
+          <div class="form-group"><label for="birthdate">Date of birth</label><input id="birthdate" name="birthdate" type="date"></div>
+          <div class="form-group"><label for="portfolio">Portfolio or profile URL</label><input id="portfolio" name="portfolio" type="url" placeholder="https://example.com"></div>
+          <div class="form-group"><label for="interest">Area of interest *</label><select id="interest" name="interest" required><option value="">Choose an interest</option><option>Technology</option><option>Arts and Creativity</option><option>Event Management</option><option>Public Speaking</option><option>Sports</option><option>Other</option></select></div>
+          <fieldset class="form-group full-width"><legend>Preferred membership *</legend><div class="choice-row"><label><input type="radio" name="membership" value="member" required> General member</label><label><input type="radio" name="membership" value="volunteer"> Volunteer</label><label><input type="radio" name="membership" value="organizer"> Event organiser</label></div></fieldset>
+          <fieldset class="form-group full-width"><legend>Skills you would like to explore</legend><div class="choice-row"><label><input type="checkbox" name="skills" value="design"> Design</label><label><input type="checkbox" name="skills" value="coding"> Coding</label><label><input type="checkbox" name="skills" value="communication"> Communication</label><label><input type="checkbox" name="skills" value="leadership"> Leadership</label></div></fieldset>
+          <div class="form-group full-width"><label for="about-you">Tell us about yourself</label><textarea id="about-you" name="about-you" rows="4" placeholder="Share your interests, ideas or expectations..."></textarea></div>
+          <div class="form-group full-width"><label for="student-id">Upload student ID (optional)</label><input id="student-id" name="student-id" type="file" accept=".jpg,.jpeg,.png,.pdf"></div>
+          <div class="form-group full-width"><label class="check-label"><input type="checkbox" name="consent" required> I agree to be contacted about club activities and events. *</label></div>
+        </div>
+        <button class="btn btn-primary submit-btn" type="submit">Submit registration →</button>
+        <p class="form-note">Demo form: submissions are not stored or sent to a server.</p>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand footer-brand" href="index.html"><span class="brand-mark">CC</span> Campus Connect</a><p>Made for students, powered by community.</p><p>© 2026 Campus Connect College Club</p></div></footer><script src="script.js"></script>
+</body></html>
